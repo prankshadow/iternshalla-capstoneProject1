@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce</title>
+
+    <!-- attaching css file to project -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- adding jQuery(Add before bootstrap bczo bootstrap use jQuery features) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- attaching bootstrap in the project -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <!-- Adding Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <!-- font Awesome kit -->
+    <script src="https://kit.fontawesome.com/f91aec1d65.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- LOGO AND SEARCHBOX & CART -->
+    <nav class="navbar navbar-light bg-light justify-content-between py-3">
+        <img src="pictures/logo1 name.png" class="d-inline-block" style="width: 200px; height:60px" alt="logoimage">
+        <form class="form-inline text-center mx-auto">
+            <div class="searchboxDiv input-group">
+                <input class="form-control mr-sm-2" type="search" placeholder="Give a Search......" aria-label="Search">
+                <button type="submit" class="btn btn-success">Search</button>
+            </div>
+        </form>
+
+        <!-- Cart -->
+
+            <a href="login.html">
+                <button type="button" class="btn btn-warning cart btn-md">Login</button>
+            </a>
+            <a href="cart.html" class="cartIcon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+    </nav>
+
+    <!-- ALL PRODUCT LIST -->
+    
+    <nav class="product navbar navbar-light navbar-expand-lg text-center" style="background-color: #BFFFF0">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all products.html">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Women </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="#">Dresses</a></li>
+                            <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Pants</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Men </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Shirts</a></li>
+                            <li><a class="dropdown-item" href="#">Pants</a></li>
+                            <li><a class="dropdown-item" href="#">Joggers</a></li>
+                            <li><a class="dropdown-item" href="#">Hoodies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOMEPAGE -->
+    <section id="home">
+        <div class="container text-center">
+            <img class="heading-image mx-auto d-block img-fluid" src="pictures/logo1.png" alt="logo">
+            <br>
+            <button class="shopnow mx-auto d-block">Shop Now!</button>
+        </div>
+    </section>
+    <br>
+
+    <!-- MIDDLE SECTION  -->
+
+    <section id="product-display-section">
+        <div class="row p-0 m-0">
+            <div class="image-shopping col-lg-4 col-md-12 col-sm-12 p-0 product-1-women">
+                <img src="pictures/women 3.jpg" alt="women dress">
+                <div class="details">
+                  <h1 class="shopNowHeading text-dark">Women's Winter Collection</h1>
+                  <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+            <div class="image-shopping col-lg-4 col-md-12 col-sm-12 p-0 product-2-men">
+                <img src="pictures/men 3.jpeg" alt="men shirt">
+                <div class="details">
+                  <h1 class="shopNowHeading menHeading">T-shirts under 699</h1>
+                  <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+            <div class="image-shopping col-lg-4 col-md-12 col-sm-12 p-0 product-3-jordans">
+                <img src="pictures/jordans 3.jpg" alt="jordans">
+                <div class="details">
+                  <h1 class="shopNowHeading jordans">Upto 40% off</h1>
+                  <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED SECTION -->
+    <section id="featured" class="my-5 pb-5">
+        <div class="container mt-5 pt-2">
+            <h3>Our Featured Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+        </div>
+
+        <!-- Carousel -->
+
+    <section class="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pictures/featured photo 1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1>Jordans</h1>
+                        <p>Feel your grip</p>
+                        <button type="button" class="btn btn-danger">Shop Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/featured photo 2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1>Men accessories</h1>
+                        <p>Choose your outfit</p>
+                        <button type="button" class="btn btn-danger">Shop Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/featured photo 3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1>Nike</h1>
+                        <p>Your best choice for sportswear</p>
+                        <button type="button" class="btn btn-danger">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="mt-5 pt-5">
+        <div class="row container mx-auto">
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <img src="pictures/logo1 name.png" style="width: 200px; height:60px" alt="logo2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="footer-two col-lg-3 col-md-6 col-sm-12">
+                <h4 class="pb-3">Women</h4>
+                <ul class="text-uppercase list-unstyled">
+                    <li>
+                        <a href="#">All</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Dresses</a>
+                    </li>
+
+                    <li>
+                        <a href="#">T-shirts</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Shirts</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Pants</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-two col-lg-3 col-md-6 col-sm-12">
+                <h4 class="pb-3">Men</h4>
+                <ul class="text-uppercase list-unstyled">
+                    <li>
+                        <a href="#">All</a>
+                    </li>
+
+                    <li>
+                        <a href="#">T-shirts</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Shirts</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Pants</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Joggers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-two col-lg-3 col-md-6 col-sm-12">
+                <h4 class="pb-3">Kids</h4>
+                <ul class="text-uppercase list-unstyled">
+                    <li>
+                        <a href="#">All</a>
+                    </li>
+
+                    <li>
+                        <a href="#">T-shirts</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Shirts</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Pants</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Supliments</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright mt-4">
+            <div class="container mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto pb-3">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <div class="footer-copyright col-lg-4 col-md-6 col-sm-12 mx-auto text-nowrap">
+                    <p>Copyright ©️Stitch 2022-23 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

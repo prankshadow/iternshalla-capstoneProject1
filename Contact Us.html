@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ContactUs</title>
+    
+        <!-- attaching css file to project -->
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- adding jQuery(Add before bootstrap bczo bootstrap use jQuery features) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+        <!-- attaching bootstrap in the project -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
+        <!-- Adding Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon/favicon 3.png" type="image/x-icon">
+        <!-- font Awesome kit -->
+        <script src="https://kit.fontawesome.com/f91aec1d65.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body id="contactUs">
+
+    <div class="container mt-3 text-center">
+        <a href="index.html">
+            <img class="mb-4" src="pictures/logo1 name.png" alt="" width="200" height="90">
+        </a>
+        <h1 class="h3 mb-3 font-weight-normal">Contact Us</h1>
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+                <input type="text" name = "fName" class="form-control input-fields mx-auto" placeholder="Full Name" required autofocus>
+                <input type="email" class="form-control input-fields mx-auto" id="email" placeholder="Email" name="email">
+                <textarea class="form-control input-fields mx-auto" rows="5" id="comment" placeholder="Message" name="text"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    </body>
+</html>
